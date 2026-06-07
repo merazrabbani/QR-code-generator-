@@ -32,7 +32,75 @@ It allows users to generate QR codes, save them as images, and track history wit
 
 # 📦 INSTALLATION
 
-### Step 1: Install required library
+Step 1: Install required library  
+pip install qrcode  
 
-```bash
-pip install qrcode
+Step 2: Clone or download project  
+git clone <your-repo-link>  
+
+<br>
+
+# ▶️ HOW TO RUN
+
+python main.py  
+
+<br>
+
+# 📂 PROJECT STRUCTURE
+
+QR-Generator/
+│
+├── main.py
+├── history.txt
+├── QR codes/
+│     ├── google.png
+│     ├── sample.png
+│
+└── README.md
+
+<br>
+
+# 🧑‍💻 HOW IT WORKS
+
+Step 1: Enter text or URL  
+Step 2: Enter file name  
+Step 3: QR code is generated  
+Step 4: Image is saved in folder  
+Step 5: History is updated with timestamp  
+
+<br>
+
+# 📜 HISTORY FORMAT
+
+https://google.com | google.png | 15/06/2026 14:35:22  
+Hello World | hello.png | 15/06/2026 14:40:10  
+
+<br>
+
+# 🎯 FUTURE IMPROVEMENTS
+
+## 🔥 Basic Upgrades
+- Input validation  
+- Better menu UI  
+- Duplicate file check  
+
+## 🚀 Advanced Upgrades
+- 🎨 Colored QR codes  
+- 🖼️ Add logo inside QR  
+- 🔍 Search history  
+- 📊 Analytics dashboard  
+- 🪟 GUI version (Tkinter)  
+
+<br>
+
+# ⚠️ NOTES
+
+- Python 3 required  
+- Keep `history.txt` in same folder  
+- QR images stored in `QR codes/` folder  
+
+<br>
+
+# 👨‍💻 AUTHOR
+
+Made with 💡 by a Python learner building real-world projects step by step.

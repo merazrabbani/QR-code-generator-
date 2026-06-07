@@ -63,7 +63,7 @@ def work():
     if file_n == "":
         print("\nName cannot be empty")
         return work()
-    elif os.path.exists("QR codes/"+file_n+"png"):
+    elif os.path.exists("QR codes/"+file_n+".png"):
         print("⚠️ ", file_n, "already exists.")
         return work()
     make = qr.make(url)

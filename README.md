@@ -1,106 +1,161 @@
-# 🌟 QR CODE GENERATOR (PYTHON PROJECT)
+# 🌟 Advanced QR Code Generator (Python CLI Project)
+
+A powerful command-line QR Code Generator built using Python.  
+This project allows users to generate **custom QR codes with colors, sizes, and history tracking**, making it a practical real-world automation tool.
 
 ---
 
-## 📌 Overview
+# 🚀 Features
 
-A simple **terminal-based QR Code Generator** built using Python.  
-It allows users to generate QR codes, save them as images, and track history with timestamps.
+## 🎯 Core Features
+- Generate QR codes from text or URLs
+- Save QR codes as PNG images
+- Auto-create storage folder for QR images
+- Timestamp tracking for every QR generated
 
-<br>
+## 🎨 Customization Features
+- QR foreground color selection (Blue, Red, Green, Black)
+- Background color customization (White, Black, Grey)
+- Size control (Small / Medium / Large)
+- Simple menu-driven interface
 
-# 🚀 FEATURES
+## 📁 History System
+- View all generated QR codes
+- Search QR by keyword or filename
+- Delete full history
+- Stores generation time for each QR
 
-- 🔗 Generate QR codes from text or URLs  
-- 📁 Save QR codes in a dedicated folder  
-- 🕒 Automatic timestamp logging  
-- 📜 View full history  
-- 🗑️ Delete history  
-- ⚡ Simple menu-driven interface  
-- 🧠 Beginner-friendly project  
+## 🧠 Smart Features
+- Prevents duplicate file names
+- Handles empty input safely
+- Error handling for file operations
+- Clean CLI-based workflow
 
-<br>
+---
 
-# 🛠️ TECHNOLOGIES USED
+# 🛠️ Tech Stack
 
-- Python 3  
-- qrcode library  
-- os module  
-- datetime module  
+- Python 3.x  
+- qrcode (Python library)  
+- os module (file management)  
+- datetime module (timestamps)
 
-<br>
+---
 
-# 📦 INSTALLATION
+# 📦 Installation
 
-Step 1: Install required library  
-pip install qrcode  
+Install required dependency:
+pip install qrcode[pil]
 
-Step 2: Clone or download project  
-git clone <your-repo-link>  
+---
 
-<br>
+# ▶️ How to Run
 
-# ▶️ HOW TO RUN
+Run the program using:
+python main.py
 
-python main.py  
+---
 
-<br>
-
-# 📂 PROJECT STRUCTURE
+# 📂 Project Structure
 
 QR-Generator/
 │
 ├── main.py
 ├── history.txt
 ├── QR codes/
-│     ├── google.png
-│     ├── sample.png
+│   ├── sample.png
+│   ├── example.png
 │
 └── README.md
 
-<br>
+---
 
-# 🧑‍💻 HOW IT WORKS
+# 🎮 Menu System
 
-Step 1: Enter text or URL  
-Step 2: Enter file name  
-Step 3: QR code is generated  
-Step 4: Image is saved in folder  
-Step 5: History is updated with timestamp  
+Main Menu:
+1. Generate QR
+2. History
+3. Exit
 
-<br>
+History Menu:
+1. View History
+2. Search QR
+3. Delete History
+4. Exit
 
-# 📜 HISTORY FORMAT
+---
 
-https://google.com | google.png | 15/06/2026 14:35:22  
-Hello World | hello.png | 15/06/2026 14:40:10  
+# 🎨 QR Customization
 
-<br>
+Foreground Colors:
+- Blue
+- Red
+- Green
+- Black
 
-# 🎯 FUTURE IMPROVEMENTS
+Background Colors:
+- White
+- Black
+- Grey
 
-## 🔥 Basic Upgrades
-- Input validation  
-- Better menu UI  
-- Duplicate file check  
+Size Options:
+Small  → 5
+Medium → 10
+Large  → 15
 
-## 🚀 Advanced Upgrades
-- 🎨 Colored QR codes  
-- 🖼️ Add logo inside QR  
-- 🔍 Search history  
-- 📊 Analytics dashboard  
-- 🪟 GUI version (Tkinter)  
+---
 
-<br>
+# 🧠 Working Process
 
-# ⚠️ NOTES
+1. User enters text or URL  
+2. System asks for QR customization  
+3. QR is generated using qrcode.QRCode()  
+4. Image is saved in /QR codes folder  
+5. Entry is stored in history.txt with timestamp  
+6. User can view/search/delete history anytime  
 
-- Python 3 required  
-- Keep `history.txt` in same folder  
-- QR images stored in `QR codes/` folder  
+---
 
-<br>
+# 📊 Example History Format
 
-# 👨‍💻 AUTHOR
+https://google.com | google.png | 14/06/2026 12:30:45  
+https://youtube.com | youtube.png | 14/06/2026 12:35:10  
 
-Made with 💡 by a Python learner building real-world projects step by step.
+---
+
+# 🔥 Future Improvements
+
+- Add logo inside QR code (Pillow integration)
+- Gradient QR codes
+- Statistics dashboard (QR count, daily usage)
+- Export history to CSV/Excel
+- QR scanner using OpenCV
+- GUI version using Tkinter
+- Cloud-based QR storage
+
+---
+
+# 🧑‍💻 Author
+
+Meraz  
+Student | Python Learner | Future Developer
+
+---
+
+# ⭐ Project Goal
+
+This project is built to practice:
+- File handling
+- Functions and logic building
+- Real-world Python automation
+- CLI application design
+- Modular thinking in programming
+
+---
+
+# 🚀 Status
+
+✔ Stable CLI Version  
+✔ Custom QR Generator  
+✔ History System Working  
+🔜 Next: Logo + GUI + Scanner Upgrade
